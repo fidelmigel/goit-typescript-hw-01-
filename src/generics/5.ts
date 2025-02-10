@@ -7,7 +7,7 @@ export enum UserRole {
 type RoleTranslation = Record<UserRole, string>;
 
 const RoleDescription: RoleTranslation = {
-  admin: "Admin User",
-  editor: "Editor User",
-  guest: "Guest User",
+  [UserRole.admin]: "Admin User",
+  [UserRole.editor]: "Editor User",
+  [UserRole.guest]: "Guest User",
 };
